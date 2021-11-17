@@ -1,0 +1,46 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 17, 2021, 1:08:29 PM
+    Author     : Cristian
+*/
+#labTitulo{
+            -fx-font-family: "Helvetica";
+            -fx-font-size: 36px;
+            -fx-font-style: italic;
+            -fx-text-fill: #FFFFFF;
+}
+
+#panel{-fx-background-color: #000000}
+
+.button{    -fx-font-family: "Times New Roman";
+            -fx-font-size: 28px;
+            -fx-text-fill: #FFFFFF;
+            -fx-font-style: italic;
+            
+            -fx-background-radius: 5px;
+            -fx-background-color: #008287;
+            -fx-border-with: 2px;
+            -fx-border-radius: 5px;
+            -fx-border-color: #FFFFFF;
+                        
+}
+
+.button:hover{ -fx-background-color: #333333;
+               -fx-font-size: 22px;  
+}
+
+.button:pressed{
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+}
+            
+#labCreacion, #labNombre {
+            -fx-font-family: "Helvetica";
+            -fx-font-size: 12px;
+            -fx-text-fill: #FFFF00;
+}

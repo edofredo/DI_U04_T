@@ -1,14 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLDocumentController">
-    <children>
-        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
-    </children>
-</AnchorPane>
+<VBox fx:id="panel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLDocumentController">
+   <children>
+      <Label fx:id="labTitulo" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="400.0" text="Aplicación de estilo">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+      </Label>
+      <Button fx:id="butEstilo1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#aplicarEstilo1" prefHeight="60.0" prefWidth="350.0" text="Aplicar estilo 1" VBox.vgrow="NEVER">
+         <VBox.margin>
+            <Insets left="25.0" right="5.0" top="3.0" />
+         </VBox.margin>
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Button>
+      <Button fx:id="butEstilo2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#aplicarEstilo2" prefHeight="60.0" prefWidth="350.0" text="Aplicar estilo 2">
+         <VBox.margin>
+            <Insets left="25.0" right="5.0" top="3.0" />
+         </VBox.margin>
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Button>
+      <Button fx:id="butEstilo3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#aplicarEstilo3" prefHeight="60.0" prefWidth="350.0" text="Aplicar estilo 3">
+         <VBox.margin>
+            <Insets left="25.0" right="5.0" top="3.0" />
+         </VBox.margin>
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Button>
+      <Button fx:id="butResetear" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#resetear" prefHeight="60.0" prefWidth="350.0" text="Resetear">
+         <VBox.margin>
+            <Insets left="25.0" right="5.0" top="3.0" />
+         </VBox.margin>
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Button>
+      <Button fx:id="butSalir" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#salir" prefHeight="60.0" prefWidth="350.0" text="Salir">
+         <VBox.margin>
+            <Insets left="25.0" right="5.0" top="3.0" />
+         </VBox.margin>
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Button>
+      <Label fx:id="labCreacion" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="416.0" text="Creación de estilo hecha por:">
+         <font>
+            <Font size="8.0" />
+         </font>
+         <VBox.margin>
+            <Insets right="25.0" top="15.0" />
+         </VBox.margin>
+      </Label>
+      <Label fx:id="labNombre" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="403.0" text="Cristian Ade Medina">
+         <font>
+            <Font size="8.0" />
+         </font>
+         <VBox.margin>
+            <Insets right="25.0" />
+         </VBox.margin>
+      </Label>
+   </children>
+</VBox>

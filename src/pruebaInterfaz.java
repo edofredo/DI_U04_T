@@ -21,8 +21,8 @@ public class pruebaInterfaz extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
         
         Scene scene = new Scene(root);
-        
         stage.setScene(scene);
+        stage.setTitle("Estilo 1.0");
         stage.show();
     }
 
