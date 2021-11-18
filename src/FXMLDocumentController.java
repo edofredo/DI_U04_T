@@ -10,6 +10,8 @@ import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
@@ -54,15 +56,22 @@ public class FXMLDocumentController implements Initializable {
     }
     
     @FXML
-    private void salir(ActionEvent event){
+    private void salir(ActionEvent event){       
         Platform.exit();
+    }
+    
+    @FXML
+    private void acercaDe(ActionEvent event){       
+        Alert acercaDe = new Alert(AlertType.INFORMATION,"Aplicación realizada "
+                + "por Cristian Ade Medina.\nVersión 1.0");
+        acercaDe.show();
     }
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         
     }    
-       
+    
     private void cargarEstilo(String css){
         panel.getStylesheets().removeAll(TEMA1,TEMA2,TEMA3);
         panel.getStylesheets().add(css);
